@@ -15,7 +15,7 @@ public class E014 {
 		System.out.print("tercer trimestre: ");
 		Integer tercero = s.nextInt();
 
-		double media = (double) (primer + segundo + tercero) / 3;
+		double media = (primer + segundo + tercero) / 3.;
 		System.out.println("boletin de calificaciones: " + (int) (media));
 		System.out.println("expediente academico: " + media);
 		
