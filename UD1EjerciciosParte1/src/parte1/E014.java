@@ -16,7 +16,7 @@ public class E014 {
 		Integer tercero = s.nextInt();
 
 		double media = (primer + segundo + tercero) / 3.;
-		System.out.println("boletin de calificaciones: " + (int) (media));
+		System.out.println("boletin de calificaciones: " + Math.round(media*100)/100.);
 		System.out.println("expediente academico: " + media);
 		
 		s.close();
