@@ -8,7 +8,14 @@ public class Ejercicio11 {
 
 		Scanner s = new Scanner(System.in);
 		
+		System.out.print("edad: ");
+		Integer edad = s.nextInt();
+		System.out.print("permiso de conducir (true/false): ");
+		Boolean permiso = s.nextBoolean();
+		System.out.print("sancion (true/false): ");
+		Boolean sancion = s.nextBoolean();
 		
+		System.out.println(edad >= 18 && permiso && !sancion);
 		
 		s.close();
 	}
