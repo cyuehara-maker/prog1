@@ -5,5 +5,8 @@ public class Exercise5 {
 		System.out.println("your name");
 		System.out.println("address");
 		System.out.println("telephone number");
+		
+		// es privado
+		
 	}
 }
