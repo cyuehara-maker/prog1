@@ -20,13 +20,14 @@ public class Ejercicio1 {
 		while (cifra > 0) {
 			cifra /= 10;
 			count++;
+			System.out.println(count);
 		}
 		
 		Integer a, b;
 		Integer index = 0;
 		while (index < count) {
 			a = x % 10;
-			b = x / (count * 10) % 10;
+			b = x / Math.powExact(10, count) % 10;
 			if (a != b) {
 				System.out.println("no");
 				break;
