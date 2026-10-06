@@ -20,14 +20,13 @@ public class Ejercicio1 {
 			cifra /= 10;
 			count++;
 		}
-		
-		Integer a, b;
+
 		Integer c = x;
 		Boolean isCapicua = true;
 		Integer index = 0;
 		while (index < count) {
-			a = c % 10;
-			b = x / Math.powExact(10, count - 1) % 10;
+			Integer a = c % 10;
+			Integer b = x / Math.powExact(10, count - 1) % 10;
 			if (a != b) {
 				isCapicua = false;
 				break;
