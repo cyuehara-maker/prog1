@@ -11,30 +11,31 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 		
 		Scanner s = new Scanner(System.in);
-		
 		System.out.print("x: ");
-		Integer x = s.nextInt();
+		Integer x = Math.abs(s.nextInt());
 	
 		Integer cifra = x;
 		Integer count = 0;
 		while (cifra > 0) {
 			cifra /= 10;
 			count++;
-			System.out.println(count);
 		}
 		
 		Integer a, b;
+		Integer c = x;
+		Boolean isCapicua = true;
 		Integer index = 0;
 		while (index < count) {
-			a = x % 10;
-			b = x / Math.powExact(10, count) % 10;
+			a = c % 10;
+			b = x / Math.powExact(10, count - 1) % 10;
 			if (a != b) {
-				System.out.println("no");
+				isCapicua = false;
 				break;
 			}
-			x %= 10;
+			c %= 10;
 			index++;
 		}
+		System.out.println(isCapicua);
 		
 		s.close();
 		
