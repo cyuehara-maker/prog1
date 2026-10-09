@@ -10,7 +10,7 @@ public class Ejercicio7 {
 		Integer n = s.nextInt();
 		
 		Boolean esPrimo = true;
-		for (int i = 2; i < n; i++) {
+		for (int i = 2; i < Math.sqrt(n); i++) {
 			if (n % i == 0) {
 				esPrimo = false;
 			}
