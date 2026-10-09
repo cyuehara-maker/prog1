@@ -8,13 +8,15 @@ public class Ejercicio3 {
 		Scanner s = new Scanner(System.in);
 		Integer input = s.nextInt();
 
-		Integer sum = 0;
+		Double sum = 0.;
+		Integer count = 0;
 		while (input >= 0) {
 			sum += input;
+			count++;
 			input = s.nextInt();
 		}
 
-		System.out.println("La suma es " + sum);
+		System.out.println("media: " + sum / count);
 
 		s.close();
 		
